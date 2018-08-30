@@ -1,5 +1,44 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.application{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.foot{
+  background-color: lightgreen;
+  padding: 1em 1em 1em 1em;
+  height: 10vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.content {
+  order: 2;
+  flex-grow: 1;
+  background-color: lightcoral;
+  height: 100%;
+  padding: 1em 1em 1em 1em;
+}
+
+.navigation {
+  order: 1;
+  flex-basis: 200px;
+  background-color: lightblue;
+  height: 100%;
+  padding: 1em 1em 1em 1em;
+}
+
+a:hover {
+  font-weight: bolder;
 }
